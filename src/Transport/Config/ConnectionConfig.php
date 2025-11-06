@@ -6,22 +6,21 @@ namespace Jwage\PhpAmqpLibMessengerBundle\Transport\Config;
 
 use InvalidArgumentException;
 use PhpAmqpLib\Connection\AMQPConnectionConfig;
-use SensitiveParameter;
 
 use function array_keys;
 use function is_string;
 use function sprintf;
 use function str_replace;
 
-readonly class ConnectionConfig
+class ConnectionConfig
 {
-    public const int DEFAULT_PREFETCH_COUNT = 1;
+    public const DEFAULT_PREFETCH_COUNT = 1;
 
-    public const int DEFAULT_WAIT_TIMEOUT = 1;
+    public const DEFAULT_WAIT_TIMEOUT = 1;
 
-    public const int DEFAULT_CONFIRM_TIMEOUT = 3;
+    public const DEFAULT_CONFIRM_TIMEOUT = 3;
 
-    private const array AVAILABLE_OPTIONS = [
+    public const AVAILABLE_OPTIONS = [
         'auto_setup',
         'host',
         'port',
@@ -109,7 +108,6 @@ readonly class ConnectionConfig
         string|null $host = null,
         int|null $port = null,
         string|null $user = null,
-        #[SensitiveParameter]
         string|null $password = null,
         string|null $vhost = null,
         bool|null $insist = null,

@@ -6,7 +6,6 @@ namespace Jwage\PhpAmqpLibMessengerBundle\Transport;
 
 use InvalidArgumentException;
 use Override;
-use SensitiveParameter;
 use Symfony\Component\Messenger\Transport\Serialization\SerializerInterface;
 use Symfony\Component\Messenger\Transport\TransportFactoryInterface;
 use Symfony\Component\Messenger\Transport\TransportInterface;
@@ -31,7 +30,6 @@ class AmqpTransportFactory implements TransportFactoryInterface
      */
     #[Override]
     public function createTransport(
-        #[SensitiveParameter]
         string $dsn,
         array $options,
         SerializerInterface $serializer,
@@ -49,7 +47,6 @@ class AmqpTransportFactory implements TransportFactoryInterface
     /** @inheritDoc */
     #[Override]
     public function supports(
-        #[SensitiveParameter]
         string $dsn,
         array $options,
     ): bool {

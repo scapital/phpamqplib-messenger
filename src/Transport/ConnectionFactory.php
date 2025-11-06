@@ -7,7 +7,6 @@ namespace Jwage\PhpAmqpLibMessengerBundle\Transport;
 use InvalidArgumentException;
 use Jwage\PhpAmqpLibMessengerBundle\RetryFactory;
 use Psr\Log\LoggerInterface;
-use SensitiveParameter;
 
 class ConnectionFactory
 {
@@ -25,7 +24,6 @@ class ConnectionFactory
      * @throws InvalidArgumentException
      */
     public function fromDsn(
-        #[SensitiveParameter]
         string $dsn,
         array $options = [],
     ): Connection {

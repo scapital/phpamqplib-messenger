@@ -7,9 +7,9 @@ namespace Jwage\PhpAmqpLibMessengerBundle\Transport\Config;
 use InvalidArgumentException;
 use PhpAmqpLib\Exchange\AMQPExchangeType;
 
-readonly class DelayConfig
+class DelayConfig
 {
-    private const array AVAILABLE_OPTIONS = [
+    private const AVAILABLE_OPTIONS = [
         'exchange',
         'enabled',
         'auto_setup',

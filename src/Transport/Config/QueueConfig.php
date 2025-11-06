@@ -9,9 +9,9 @@ use InvalidArgumentException;
 use function is_string;
 use function sprintf;
 
-final readonly class QueueConfig
+final class QueueConfig
 {
-    private const array AVAILABLE_OPTIONS = [
+    private const AVAILABLE_OPTIONS = [
         'name',
         'prefetch_count',
         'wait_timeout',

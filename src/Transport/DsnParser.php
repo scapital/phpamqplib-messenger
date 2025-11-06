@@ -24,7 +24,7 @@ use function urldecode;
 
 class DsnParser
 {
-    private const array INTEGER_ARGUMENTS = [
+    private const INTEGER_ARGUMENTS = [
         'x-delay',
         'x-expires',
         'x-max-length',

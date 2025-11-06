@@ -28,13 +28,13 @@ use const FILTER_VALIDATE_INT;
 
 class ConfigHelper
 {
-    private const string TYPE_STRING  = 'string';
-    private const string TYPE_ARRAY   = 'array';
-    private const string TYPE_INTEGER = 'integer';
-    private const string TYPE_FLOAT   = 'float';
-    private const string TYPE_BOOLEAN = 'boolean';
+    private const TYPE_STRING  = 'string';
+    private const TYPE_ARRAY   = 'array';
+    private const TYPE_INTEGER = 'integer';
+    private const TYPE_FLOAT   = 'float';
+    private const TYPE_BOOLEAN = 'boolean';
 
-    private const array TYPE_FILTER_MAP = [
+    private const TYPE_FILTER_MAP = [
         self::TYPE_INTEGER => FILTER_VALIDATE_INT,
         self::TYPE_FLOAT => FILTER_VALIDATE_FLOAT,
         self::TYPE_BOOLEAN => FILTER_VALIDATE_BOOL,

@@ -6,9 +6,9 @@ namespace Jwage\PhpAmqpLibMessengerBundle\Transport\Config;
 
 use InvalidArgumentException;
 
-final readonly class SslConfig
+final class SslConfig
 {
-    private const array AVAILABLE_OPTIONS = [
+    private const AVAILABLE_OPTIONS = [
         'cafile',
         'capath',
         'local_cert',

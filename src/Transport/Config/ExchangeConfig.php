@@ -7,9 +7,9 @@ namespace Jwage\PhpAmqpLibMessengerBundle\Transport\Config;
 use InvalidArgumentException;
 use PhpAmqpLib\Exchange\AMQPExchangeType;
 
-readonly class ExchangeConfig
+class ExchangeConfig
 {
-    private const array AVAILABLE_OPTIONS = [
+    private const AVAILABLE_OPTIONS = [
         'name',
         'type',
         'default_publish_routing_key',

@@ -6,9 +6,9 @@ namespace Jwage\PhpAmqpLibMessengerBundle\Transport\Config;
 
 use InvalidArgumentException;
 
-readonly class BindingConfig
+class BindingConfig
 {
-    private const array AVAILABLE_OPTIONS = [
+    private const AVAILABLE_OPTIONS = [
         'routing_key',
         'arguments',
     ];
