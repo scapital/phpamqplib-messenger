@@ -427,6 +427,7 @@ class Connection
 
             $this->channel()->queue_declare(
                 queue: $delayQueueName,
+                durable: true,
                 nowait: false,
                 arguments: new AMQPTable([
                     'x-message-ttl' => $delay,
